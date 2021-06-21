@@ -1,15 +1,18 @@
 * To compile go to the root folder:
 
+```
 mkdir build
 cd build
 cmake ..    
 make -j
-
+```
 * Print help
+```
 ./tesflix -h
-
+```
 
 * To find a list of movies:
+```
 ./testflix -M
 
         [ 6650 ] The English Patient
@@ -24,9 +27,10 @@ make -j
         [ 59906 ] There will be Blood
         [ 62407 ] The Fall
         [ 184126 ] The Martian
-
+```
 
 * To find a list of theaters for Startgate (movie id: 25):
+```
 ./testflix -m 25 -T
 
 Startgate featured at the following locations:
@@ -37,12 +41,13 @@ Startgate featured at the following locations:
         [ 8845 ] Cinema 2
         [ 9435 ] Cinema 5
         [ 42963 ] Cinema 7
-
+```
 * To See a list of available seats(xx):
+```
 ./testflix.exe -m 25 -t 42963 
 
      0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
- 0 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]\n
+ 0 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
  1 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
  2 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
  3 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
@@ -74,9 +79,10 @@ Startgate featured at the following locations:
 29 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
 30 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
 31 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
-
+```
 
 * To Book one ticket at row 10 col 11:
+```
 ./testflix.exe -m 25 -t 42963 -r 10 -c 11
 
 Trying to get tickets for Startgate at Cinema 7
@@ -119,10 +125,11 @@ Row: 10, Col: 11
 29 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
 30 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
 31 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
-
+```
 
 
 * To Book 9 tickets at row 10 col 11:
+```
 ./testflix.exe -m 25 -t 42963 -r 10 -c 11 -q 9
 
 Trying to get tickets for Startgate at Cinema 7
