@@ -147,7 +147,7 @@ Row: 10, Col: 4
 
 Row: 10, Col: 3
 
-
+```
      0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
  0 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
  1 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
@@ -182,3 +182,4 @@ Row: 10, Col: 3
 30 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
 31 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
 
+```
