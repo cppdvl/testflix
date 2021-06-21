@@ -42,7 +42,7 @@ Startgate featured at the following locations:
 ./testflix.exe -m 25 -t 42963 
 
      0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
- 0 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
+ 0 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]\n
  1 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
  2 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
  3 [xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx][xx]
