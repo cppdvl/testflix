@@ -183,8 +183,9 @@ class Application{
 
     }
 
-    void PrintAccomodations(TestFlix::MovieEvent event)
+    void PrintAccomodations()
     {
+        TestFlix::MovieEvent event = mEventSelected;
         auto data = TestFlix::event_seats[event];
 
         std::cout << std::endl;
@@ -215,8 +216,7 @@ class Application{
     };
     void BookSeat(std::vector<std::string>& bookedstrings, TestFlix::MovieEvent event, unsigned int row, unsigned int col, unsigned int& ticketsToBook, ParentSeatPosition parentChairUbication)
     {
-        auto& accomodations = TestFlix::event_seats[event];
-        auto& rowaccomodations = accomodations[row];
+        auto& rowaccomodations = TestFlix::event_seats[event][row];
         if ((rowaccomodations >> col) & 0x01)
         {
             //Seat No Available
@@ -335,9 +335,7 @@ public:
 
     Application(cxxopts::ParseResult& parseResult)
     {
-        if (parseResult["R"].as<bool>()){
-            Reset();
-        }
+        Reset();
         if (parseResult["M"].as<bool>()){
             ListMovies();
         }
@@ -353,6 +351,7 @@ public:
         if (selectedTheaterID)
         {
             SelectTheater(selectedTheaterID);
+            PrintAccomodations();
         }
 
         auto rcq = std::make_tuple(
@@ -369,6 +368,7 @@ public:
                 return;
             }
             BookSeats(mEventSelected, r, c, q);
+            PrintAccomodations();
         }
 
     }
@@ -396,7 +396,6 @@ int main(int argc, char** argv) {
     auto options = cxxopts::Options("TestFlix", "A C++ Test Demo");
     options.add_options()
             ("h, help", "Print this...")
-            ("R, reset", "restart movies & theaters booking state", cxxopts::value<bool>()->default_value("false"))
             ("m, select_movie", "Integer to select an ID of a movie",
                     cxxopts::value<std::uint32_t>()->default_value("0"))//default 0
             ("t, select_theater", "Interger to ID of a theater",
