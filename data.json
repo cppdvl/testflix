@@ -1,0 +1,27 @@
+
+{
+  "movies": [
+    {"id": 25, "name": "Startgate"},
+    {"id": 1685, "name":  "The Adventures of Priscilla, Queen of the Desert"},
+    {"id": 2756, "name":  "Max Max"},
+    {"id": 3427, "name":  "From Dusk Till Dawn"},
+    {"id": 4167, "name":  "Woman in the Dunes"},
+    {"id": 6650, "name":  "The English Patient"},
+    {"id": 7772, "name":  "Raiders of the Lost Ark"},
+    {"id": 8675, "name":  "Lawrence of Arabia – 70mm"},
+    {"id": 21448, "name": "Three Kings"},
+    {"id": 59906, "name": "There will be Blood"},
+    {"id": 62407, "name": "The Fall"},
+    {"id": 184126, "name": "The Martian"}
+  ],
+  "theaters": [
+    {"id":8842, "name": "Cinema 1"},
+    {"id":8845, "name": "Cinema 2"},
+    {"id":8910, "name": "Cinema 3"},
+    {"id":8930, "name": "Cinema 4"},
+    {"id":9435, "name": "Cinema 5"},
+    {"id":10636, "name": "Cinema 6"},
+    {"id":42963, "name": "Cinema 7"},
+    {"id":45353, "name": "Cinema 8"}
+  ]
+}
